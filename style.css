@@ -85,6 +85,12 @@ body {
     padding: .2em;
     border-radius: 20px;
     background-color: white;
+    z-index: 19;
+}
+
+.fa-hand-back-fist:hover, .fa-hand:hover, 
+.fa-hand-scissors:hover {
+    cursor: pointer;
 }
 
 .rock, .paper, .scissor {
@@ -118,6 +124,7 @@ body {
 
 .score-display > h2 {
     font-size: 5em;
+    text-align: center;
 }
 
 .score {
@@ -160,3 +167,4 @@ body {
 .fa-user, .fa-desktop {
     color: white;
 }
+
