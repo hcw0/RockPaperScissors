@@ -92,15 +92,37 @@ let roundSummary = (string) => {
 let checkGameEnd = () => {
     if(playerWins == 5 || computerWins == 5){
         let overlay = document.createElement("div");
-        overlay.style.cssText = "position: fixed; z-index: 9999; opacity: 0.5;" +
+        overlay.style.cssText = "position: fixed; z-index: 9998; opacity: 0.5;" +
             "background-color: black; width: 100%; min-height: 100vh; display: block;" +
             "";
         document.querySelector("body").insertBefore(overlay, document.querySelector(".header"));
 
         let alert = document.createElement("div");
+        alert.style.cssText = "position: fixed; z-index: 9999; background-color: #9DFFCB;" +
+            "top: 50%; left: 50%; height: 18em; width: 30em; transform: translate(-50%, -50%);" +
+            "border-radius: 2em; display: flex; flex-direction: column; justify-content: center; align-items:center" +
+            "";
+        let text = document.createElement("p");
+        text.textContent = checkWinner();
+        text.style.cssText = "font-size: 4em; margin-top: 0;";
+        let button = document.createElement("button");
+        button.textContent = "Play again";
+        button.style.cssText = "background-color: white; padding: 1.5em 3em; margin-top: -3em;" +
+            "font-size: 1em; border-radius: 3em; border: 3px solid black; cursor: pointer;";
 
+        button.addEventListener("click", () => window.location.reload());
+        alert.append(text);
+        alert.append(button);
+        document.querySelector("body").insertBefore(alert, document.querySelector(".header"));
         return true;
     } else{
         return false;
     }
+}
+
+let checkWinner = () => {
+    if(userScore > computerWins){
+        return "You won!";
+    } else
+        return "You lost";
 }
