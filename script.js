@@ -67,4 +67,4 @@ let playerWon = () => playerWins++;
 let computerWon = () => computerWins++;
 
 
-game(prompt("Enter your choice(rock, paper, or scissors:)"));
+// game(prompt("Enter your choice(rock, paper, or scissors:)"));
