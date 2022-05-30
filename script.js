@@ -10,6 +10,7 @@ function computerPlay(){
     let choice = Math.floor(Math.random() * 3);
     if(choice == 0){
         icon.className = "fa-regular fa-hand-back-fist";
+        icon.style.cssText = "margin-top: 0;";
     } else if(choice == 1){
         icon.className = "fa-regular fa-hand";
     } else{

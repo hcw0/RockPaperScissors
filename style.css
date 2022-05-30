@@ -85,36 +85,45 @@ body {
     border-radius: 20px;
     background-color: white;
     z-index: 19;
+    box-shadow: 10px 10px gray;
+}
+
+#rock-selection:hover, #paper-selection:hover, #scissors-selection:hover {
+    transform: scale(0.98);
+    box-shadow: 5px 5px gray;
 }
 
 
 .rock, .paper, .scissor {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-weight: 600;
     margin-bottom: 2em;
+    gap: .1em;
+    margin-bottom: 0;
 }
 
-.scissor {
-    margin-right: 1.8em;
+.fa-hand-back-fist {
+    margin-top: 1em;
+    padding: .25em;
 }
 
-.rock > p {
-    margin-right: 1em;
+.rock > p, .paper > p, .scissor > p {
+    margin: 0;
+    text-align: center;
 }
 
-.paper > p {
-    margin-right: .5em;
-}
+
 
 .choices p {
     font-size: 2em;
 }
 
 .score-display {
-    margin-right: 3em;
+    margin-right: 18em;
+    margin-left: -6em;
 }
 
 .score-display > h2 {
@@ -138,6 +147,11 @@ body {
     cursor: default;
 }
 
+.pc-choice {
+    margin-left: -10em;
+    margin-right: 5em;
+}
+
 .pc-container {
     display: flex;
     flex-direction: column;
@@ -157,6 +171,7 @@ body {
     font-size: 4em;
     align-items: center;
     margin-top: .5em;
+    margin-left: -6em;
 }
 
 .fa-user, .fa-desktop {
