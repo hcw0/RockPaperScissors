@@ -1,7 +1,6 @@
 * {
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
-    /* outline: 2px solid red; */
 }
 
 body {
@@ -79,8 +78,8 @@ body {
 
 .fa-hand-back-fist, .fa-hand, 
 .fa-hand-scissors, .fa-circle-question {
+    cursor: pointer !important;
     font-size: 8em;
-    cursor: pointer;
     border: 6px solid black;
     padding: .2em;
     border-radius: 20px;
@@ -88,10 +87,6 @@ body {
     z-index: 19;
 }
 
-.fa-hand-back-fist:hover, .fa-hand:hover, 
-.fa-hand-scissors:hover {
-    cursor: pointer;
-}
 
 .rock, .paper, .scissor {
     display: flex;
