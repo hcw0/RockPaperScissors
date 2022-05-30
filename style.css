@@ -1,13 +1,13 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 body {
     min-height: 100vh;
     margin: 0;
-    background-color: #b8b8ff;
+    background-color: #BCFFDB;
 }
 
 .header {
@@ -19,7 +19,7 @@ body {
 
 .header > h1{
     font-size: 45px;
-    color: white;
+    color: black;
     display:inline-block;
     position:relative;
     margin: 20px;
@@ -32,14 +32,14 @@ body {
     bottom: 0;
     left: -10px;
     right: -10px;
-    background: #9381ff;
+    background: white;
     z-index: -1;
     transform: skew(-25deg);
     -moz-transform: skew(-25deg);
     -webkit-transform: skew(-25deg);
     box-shadow: .3em .3em 0 0 rgb(125, 125, 125);
     -moz-box-shadow: .3em .3em 0 0 rgb(125, 125, 125);
-    -webkit-box-shadow: .3em .3em 0 0 rgb(125, 125, 125);
+    -webkit-box-shadow: .3em .3em 0 0 black;
 }
 
 .body {
@@ -47,8 +47,116 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 8em;
 }
 
 .fa-user {
-    font-size: 20em;
+    font-size: 15em;
+}
+
+.user-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-icon > p {
+    font-weight: bold;
+    font-size: 4em;
+    align-items: center;
+    margin-top: .5em;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 30em;
+    margin-left: -8em;
+}
+
+.fa-hand-back-fist, .fa-hand, 
+.fa-hand-scissors, .fa-circle-question {
+    font-size: 8em;
+    cursor: pointer;
+    border: 6px solid black;
+    padding: .2em;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.rock, .paper, .scissor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.scissor {
+    margin-right: 1.8em;
+}
+
+.rock > p {
+    margin-right: 1em;
+}
+
+.paper > p {
+    margin-right: .5em;
+}
+
+.choices p {
+    font-size: 2em;
+}
+
+.score-display {
+    margin-right: 3em;
+}
+
+.score-display > h2 {
+    font-size: 5em;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 3em;
+    margin-top: -2.5em;
+}
+
+.score p {
+    font-size: 1.5em;
+}
+
+#pc-choice-icon {
+    cursor: default;
+}
+
+.pc-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-desktop {
+    font-size: 15em;
+}
+
+.pc {
+    margin-left: 6em;
+}
+
+.pc-container > p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    align-items: center;
+    margin-top: .5em;
+}
+
+.fa-user, .fa-desktop {
+    color: white;
 }
