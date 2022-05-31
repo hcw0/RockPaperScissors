@@ -1,12 +1,13 @@
 * {
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
+    /* color: #BCFFDB; */
 }
 
 body {
     min-height: 100vh;
     margin: 0;
-    background-color: #BCFFDB;
+    background-color: #FFA29D;
 }
 
 .header {

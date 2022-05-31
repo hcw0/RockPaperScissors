@@ -99,7 +99,7 @@ let checkGameEnd = () => {
         document.querySelector("body").insertBefore(overlay, document.querySelector(".header"));
 
         let alert = document.createElement("div");
-        alert.style.cssText = "position: fixed; z-index: 9999; background-color: #9DFFCB;" +
+        alert.style.cssText = "position: fixed; z-index: 9999; background-color: #FF847D;" +
             "top: 50%; left: 50%; height: 18em; width: 30em; transform: translate(-50%, -50%);" +
             "border-radius: 2em; display: flex; flex-direction: column; justify-content: center; align-items:center" +
             "";
