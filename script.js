@@ -86,7 +86,7 @@ let computerWon = () => {
 let roundSummary = (string) => {
     let p = document.querySelector("#round-summary");
     p.textContent = string;
-    p.style.cssText = "text-align: center; font-size: 2em; margin-top: -2em;";
+    p.style.cssText = "text-align: center; font-size: 2em; margin-top: -2em; max-width: 8em;"
     document.querySelector(".score-display").appendChild(p);
 }
 

@@ -125,6 +125,10 @@ body {
 .score-display {
     margin-right: 18em;
     margin-left: -6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .score-display > h2 {
